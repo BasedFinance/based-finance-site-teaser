@@ -1,11 +1,11 @@
-import React from 'react';
-import Page from '../../components/Page';
-import HomeImage from '../../assets/img/home.png';
-import CashImage from '../../assets/img/crypto_tomb_cash.png';
-import Image from 'material-ui-image';
+import React from 'react'
+import Page from '../../components/Page'
+import HomeImage from '../../assets/img/home.png'
+import CashImage from '../../assets/img/crypto_tomb_cash.png'
+import Image from 'material-ui-image'
 // import styled from 'styled-components';
 // import { Alert } from '@material-ui/lab';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 // import CountUp from 'react-countup';
 // import CardIcon from '../../components/CardIcon';
 // import TokenSymbol from '../../components/TokenSymbol';
@@ -21,7 +21,7 @@ import { createGlobalStyle } from 'styled-components';
 
 // import MetamaskFox from '../../assets/img/metamask-fox.svg';
 
-import { Box, Grid, Paper } from '@material-ui/core';
+import { Box, Grid, Paper } from '@material-ui/core'
 // import ZapModal from '../Bank/components/ZapModal';
 
 // import { makeStyles } from '@material-ui/core/styles';
@@ -32,7 +32,7 @@ const BackgroundImage = createGlobalStyle`
     background: url(${HomeImage}) no-repeat !important;
     background-size: cover !important;
   }
-`;
+`
 
 // const useStyles = makeStyles((theme) => ({
 //   button: {
@@ -44,13 +44,13 @@ const BackgroundImage = createGlobalStyle`
 
 const Home = () => {
   // const classes = useStyles();
- // const TVL = useTotalValueLocked();
+  // const TVL = useTotalValueLocked();
   //const tombFtmLpStats = useLpStats('TOMB-FTM-LP');
- // const tShareFtmLpStats = useLpStats('TSHARE-FTM-LP');
+  // const tShareFtmLpStats = useLpStats('TSHARE-FTM-LP');
   //const tombStats = useTombStats();
- // const tShareStats = usetShareStats();
- // const tBondStats = useBondStats();
- // const tombFinance = useTombFinance();
+  // const tShareStats = usetShareStats();
+  // const tBondStats = useBondStats();
+  // const tombFinance = useTombFinance();
 
   // let tomb;
   // let tShare;
@@ -134,32 +134,32 @@ const Home = () => {
 
   return (
     <Page>
-      <BackgroundImage />
-      <Grid container spacing={3} justify='center' style={{ paddingTop: '100px', display: 'flex' }}>
+      <BackgroundImage/>
+      <Grid container spacing={3} justify="center" style={{ paddingTop: '100px', display: 'flex' }}>
         {/* Logo */}
         <Grid container item xs={12} sm={4} justify="center">
           {/* <Paper>xs=6 sm=3</Paper> */}
-          <Image color="none" style={{ width: '210px', height: '200px', paddingTop: '0px' }} src={CashImage} />
+          <Image color="none" style={{ width: '210px', height: '200px', paddingTop: '0px' }} src={CashImage}/>
         </Grid>
         {/* Explanation text */}
-        <Grid item xs={12} sm={8}  style={{display: 'flex' , alignItems:'center' }}>
+        <Grid item xs={12} sm={8} style={{ display: 'flex', alignItems: 'center' }}>
           <Paper>
             <Box p={4}>
               <h1>Coming soon...</h1>
-              <p> <a href='https://alco-toshi.gitbook.io/based-finance'>DOCUMENTATION </a> will be updated after test runs </p>
-             
+              <p><a href="https://based-finance.gitbook.io/basedfinance/" target="_blank"
+                    rel="noopener noreffere">DOCUMENTATION</a> will be updated after test runs </p>
+
               {/* <p>The first algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p> */}
-             
+
             </Box>
           </Paper>
-
 
 
         </Grid>
 
         {/* <Grid container spacing={3}>
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '100px', display: 'flex' }}> */}
-            {/* <Alert variant="standardmessage" severity="info">
+        {/* <Alert variant="standardmessage" severity="info">
               <b>
       <StyledLink target="_blank" href="https://alco-toshi.gitbook.io/based-finance/">WEBSITE CURRENTLY IS BEING TESTED .... DOCS WILL BE UPDATED SOON</StyledLink> </b>
             </Alert> */}
@@ -168,7 +168,7 @@ const Home = () => {
 
         {/* TVL */}
         {/* <Grid item xs={12} sm={4}> */}
-          {/* <Card>
+        {/* <Card>
             <CardContent align="center">
               <h2>Total Value Locked</h2>
               <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
@@ -179,7 +179,7 @@ const Home = () => {
         {/* Wallet */}
         {/* <Grid item xs={12} sm={8}>
           <Card style={{ height: '100%' }}> */}
-            {/* <CardContent align="center" style={{ marginTop: '2.5%' }}>
+        {/* <CardContent align="center" style={{ marginTop: '2.5%' }}>
               {/* <h2 style={{ marginBottom: '20px' }}>Wallet Balance</h2> }
               <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
                 Stake Now
@@ -201,7 +201,7 @@ const Home = () => {
                 Buy TSHARE
               </Button>
             </CardContent> */}
-          {/* </Card>
+        {/* </Card>
         </Grid> */}
 
         {/* TOMB */}
@@ -348,34 +348,34 @@ const Home = () => {
           <Card>
             <CardContent align="center">
               <h2>WEBSITE UNDER DEVELOPMENT</h2> */}
-              {/* <Box mt={2}> */}
-                {/* <CardIcon>
+        {/* <Box mt={2}> */}
+        {/* <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
                 </CardIcon> */}
-              {/* </Box> */}
-              {/* <Box mt={2}>
+        {/* </Box> */}
+        {/* <Box mt={2}>
                 <Button color="primary" onClick={onPresentTshareZap} variant="contained">
                   Zap In
                 </Button>
               </Box> */}
-              {/* <Box mt={2}>
+        {/* <Box mt={2}>
                 <span style={{ fontSize: '26px' }}>
                   {tshareLPStats?.tokenAmount ? tshareLPStats?.tokenAmount : '-.--'} TSHARE /{' '}
                   {tshareLPStats?.ftmAmount ? tshareLPStats?.ftmAmount : '-.--'} FTM
                 </span>
               </Box> */}
-              {/* <Box>${tshareLPStats?.priceOfOne ? tshareLPStats.priceOfOne : '-.--'}</Box>
+        {/* <Box>${tshareLPStats?.priceOfOne ? tshareLPStats.priceOfOne : '-.--'}</Box>
               <span style={{ fontSize: '12px' }}>
                 Liquidity: ${tshareLPStats?.totalLiquidity ? tshareLPStats.totalLiquidity : '-.--'}
                 <br />
                 Total supply: {tshareLPStats?.totalSupply ? tshareLPStats.totalSupply : '-.--'}
               </span> */}
-            {/* </CardContent>
+        {/* </CardContent>
           </Card>
         </Grid> */}
       </Grid>
     </Page>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
